@@ -29,6 +29,7 @@ Making POST request is also easy:
 How to install
 --------------
 .. code-block:: bash
+
     $ pip install apiconsumer
 
 
