@@ -12,6 +12,8 @@ How to use
 
 Behold the power of ApiConsumer:
 
+.. code-block:: python
+
     >>> from apiconsumer import ApiConsumer
     >>> my_api = ApiConsumer(url='https://myapi.com', extra_headers={'Authorization': 'JWT mytoken'})
     >>> users = my_api.get_users()
@@ -19,15 +21,18 @@ Behold the power of ApiConsumer:
 
 Making POST request is also easy:
 
+.. code-block:: python
+
     >>> new_user = my_api.post_users(data={'email': 'someguy@something.com', 'password': 'correct-horse-battery-staple'})
 
 
 How to install
 --------------
+.. code-block:: bash
     $ pip install apiconsumer
 
 
 Contribute
 ----------
-Be our guest. We'd like to see your awesome ideas. Just for repo, create a branch and create pull request.
+Be our guest. We'd like to see your awesome ideas. Just fork the repo, create a branch and create pull request.
 
