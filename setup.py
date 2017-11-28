@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='apiconsumer',
-    version='1.0.0b2',
+    version='1.0.0b3',
     description='Lightweight requests wrapper for REST API calls',
     long_description=long_description,
     url='https://github.com/saberr/apiconsumer',
