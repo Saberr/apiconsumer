@@ -1,7 +1,7 @@
 import logging
 import requests
 from requests.exceptions import RequestException
-from apiconsumer.exceptions import ApiConsumerRequestException, ApiConsumerResponseError
+from .exceptions import ApiConsumerRequestException, ApiConsumerResponseError
 
 logger = logging.getLogger(__name__)
 HEAD, GET, POST, PUT, PATCH, DELETE, OPTIONS = 'head', 'get', 'post', 'put', 'patch', 'delete', 'options'
