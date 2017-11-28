@@ -1,9 +1,10 @@
 APICONSUMER: A super lightweight REST API requests wrapper
 ==========================================================
 
-Following the same philosophy of Requests module (REST) ApiConsumer is here to make your life easier. Are you lazy enough
- to configure authentication for every single request? How about handling errors? Wouldn't it be great if all that could
-be done in 2 lines?
+Following the same philosophy of Requests module (REST) ApiConsumer is here to make your life easier.
+
+Are you lazy enough to configure authentication for every single request? How about handling errors? Wouldn't it be
+great if all that could be done in 2 lines?
 
 
 How to use
