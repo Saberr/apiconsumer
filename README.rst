@@ -10,25 +10,6 @@ great if all that could be done in 2 lines?
 How to use
 ----------
 
-Behold the power of ApiConsumer:
-
-.. code-block:: python
-
-    >>> from apiconsumer import ApiConsumer
-    >>> my_api = ApiConsumer(url='https://myapi.com', extra_headers={'Authorization': 'JWT mytoken'})
-    >>> users = my_api.get_users()
-
-
-Making POST request is also easy:
-
-.. code-block:: python
-
-    >>> new_user = my_api.post_users(data={'email': 'someguy@something.com', 'password': 'correct-horse-battery-staple'})
-
-
-Real example
-------------
-
 ReqRes.in provides a testing API, with fake data. Let's get all the users from their Users model. The endpoint for this is just GET reqres.in/api/users
 
 .. code-block:: python
@@ -69,6 +50,14 @@ ApiConsumer just turns attributes or method you ask for into request strings. So
 
     >>> user_id = 2
     >>> updated_user = my_api['patch_users_%d' % user_id](data={'age': 88})
+
+
+If you need authorization headers, use the extra_headers when initializing ApiConsumer:
+
+.. code-block:: python
+
+    >>> my_api = ApiConsumer(url='https://myapi.com', extra_headers={'Authorization': 'JWT mytoken'})
+
 
 
 How to install
